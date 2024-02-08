@@ -52,5 +52,3 @@ gatk CollectInsertSizeMetrics INPUT=${aligned_reads}/SRR062634_sorted_dedup_bqsr
 # Variant calling using GATK HaplotypeCaller: Calls SNPs and indels simultaneously via local de-novo assembly of haplotypes in an active region. This step is crucial for identifying genomic variants from aligned reads.
 
 gatk HaplotypeCaller -R ${ref} -I ${aligned_reads}/SRR062634_sorted_dedup_bqsr_reads.bam -O ${results}/raw_variants.vcf
-
-#Variants analysis may be performed using https://www.cancergenomeinterpreter.org
